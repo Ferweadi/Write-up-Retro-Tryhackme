@@ -14,7 +14,7 @@ Nous allons devoir trouver les flags sur un serveur web basé sur Windows.
 
 ### 1/ Enumeration
 
-Il faut premièrement énumérer les ports ouverts via Nmap<br/><br/>
+Il faut premièrement énumérer les ports ouverts via Nmap<br/>
 ```
 $ nmap -Pn -sV MACHINE_IP
 
