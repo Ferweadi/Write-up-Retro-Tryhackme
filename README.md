@@ -15,14 +15,14 @@ Nous allons devoir trouver les flags sur un serveur web basé sur Windows.
 ### 1/ Enumeration
 
 Il faut premièrement énumérer les ports ouverts via Nmap
+```
+$ nmap -Pn -sV MACHINE_IP
 
-`$ nmap -Pn -sV MACHINE_IP`
-
-`PORT     STATE SERVICE       VERSION`<br/>
-`80/tcp   open  http          Microsoft IIS httpd 10.0`<br/>
-`3389/tcp open  ms-wbt-server Microsoft Terminal Services`<br/>
-`Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows`<br/>
-
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+```
 Deux ports sont ouverts, le port 80 et 3389. Concentrons-nous en premier sur le serveur web (port 80), voici la page principale : 
 
 ![Capturewriteupretro](https://user-images.githubusercontent.com/67973590/165582217-37554dc4-7154-4c61-ac39-b0c48fe8c3c5.PNG)
