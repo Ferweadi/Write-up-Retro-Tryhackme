@@ -14,7 +14,7 @@ Nous allons devoir trouver les flags sur un serveur web basé sur Windows.
 
 ### 1/ Enumeration
 
-Il faut premièrement énumérer les ports ouverts via Nmap<br/><br/><br/><br/><br/>
+Il faut premièrement énumérer les ports ouverts via Nmap<br/><br/><br/>
 ```
 $ nmap -Pn -sV MACHINE_IP
 
@@ -23,11 +23,12 @@ PORT     STATE SERVICE       VERSION
 3389/tcp open  ms-wbt-server Microsoft Terminal Services
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
-Deux ports sont ouverts, le port 80 et 3389. Concentrons-nous en premier sur le serveur web (port 80), voici la page principale : <br/>
+<br/><br/>
+Deux ports sont ouverts, le port 80 et 3389. Concentrons-nous en premier sur le serveur web (port 80), voici la page principale : <br/><br/>
 
-![Capturewriteupretro](https://user-images.githubusercontent.com/67973590/165582217-37554dc4-7154-4c61-ac39-b0c48fe8c3c5.PNG)<br/>
+![Capturewriteupretro](https://user-images.githubusercontent.com/67973590/165582217-37554dc4-7154-4c61-ac39-b0c48fe8c3c5.PNG)<br/><br/>
 
-Nous allons à présent utiliser Gobuster (Dirsearch et Dirbuster fonctionnent également) afin de trouver les autres pages : <br/>
+Nous allons à présent utiliser Gobuster (Dirsearch et Dirbuster fonctionnent également) afin de trouver les autres pages : <br/><br/>
 ```
 $ gobuster dir -u http://MACHINE_IP -w /usr/share/dirb/wordlists/big.txt
 ===============================================================
@@ -48,11 +49,12 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 2021/04/07 09:03:43 Finished                                                                             
 ===============================================================
 ```
-Nous avons trouvé la page `/retro` après l'énumération. Voici à quoi ressemble la page :<br/>
+<br/><br/>
+Nous avons trouvé la page `/retro` après l'énumération. Voici à quoi ressemble la page :<br/><br/>
 
-![Captureretrowtf](https://user-images.githubusercontent.com/67973590/165585365-c1945d37-e01f-412b-86ca-10eb2e5242eb.PNG)<br/>
+![Captureretrowtf](https://user-images.githubusercontent.com/67973590/165585365-c1945d37-e01f-412b-86ca-10eb2e5242eb.PNG)<br/><br/>
 
-On remarque que les articles du site sont tous écrits par **Wade**, en allant voir son profil, il est possible de voir ses derniers posts. En allant sur son post *"Ready Player One"* on aperçoit un commentaire écrit par lui-même contenant ce message : <br/>
+On remarque que les articles du site sont tous écrits par **Wade**, en allant voir son profil, il est possible de voir ses derniers posts. En allant sur son post *"Ready Player One"* on aperçoit un commentaire écrit par lui-même contenant ce message : <br/><br/>
 
 
-![Capturecommentretro](https://user-images.githubusercontent.com/67973590/165585514-92b93c05-8ec9-4d77-869e-9aa111f8fe77.PNG)
+![Capturecommentretro](https://user-images.githubusercontent.com/67973590/165585514-92b93c05-8ec9-4d77-869e-9aa111f8fe77.PNG)<br/><br/>
