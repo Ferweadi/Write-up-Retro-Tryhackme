@@ -10,6 +10,8 @@ Nous allons devoir trouver les flags sur un serveur web basé sur Windows.
 :information_source: MACHINE_IP représente l'IP de la machine "Retro".
 :information_source: le signe "$" représente le début d'une commande sur shell.
 
+*********************
+
 ### 1/ Enumeration
 
 Il faut premièrement énumérer les ports ouverts via Nmap
