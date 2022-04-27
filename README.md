@@ -76,4 +76,16 @@ Bravo ! Nous avons trouvé le fichier user.txt : fbdc6d430bfb51 (incomplet)
 
 ### 3/ Escalation de privilège
 
-Dans l'historique de Chrome, on s'aperçoit que la page d'une CVE a été ouverte (CVE-2019-1388). Or dans la corbeille, il y a un fichier, que vous devrez restaurer. Une fois cette étape finie, lancez-le, cette page s'affichera : 
+Dans l'historique de Chrome, on s'aperçoit que la page d'une CVE a été ouverte *(CVE-2019-1388)*. Or dans la corbeille, il y a un fichier, que vous devrez restaurer. Une fois cette étape finie, lancez-le, cette page s'affichera : 
+
+![Capturehhpdretro](https://user-images.githubusercontent.com/67973590/165634569-249fd4bd-cb2d-46f7-b94a-f6db89b42c0e.PNG)
+
+Cliquez sur *"Show more details"* puis sur *"Show information about the publisher’s certificate."*. Cette page apparaîtra : 
+
+![Captureretroctf](https://user-images.githubusercontent.com/67973590/165634648-9dbb24c6-e972-4dab-99f3-3c525633d21c.PNG)
+
+Cliquez sur le lien de *"Issued By:"*, puis choisissez **Internet Explorer** pour l'ouvrir. Vous recevrez ensuite un message d'erreur :  
+
+![1_4aUSEMJtxwZKNlqP4BIffA](https://user-images.githubusercontent.com/67973590/165634728-5fd2aac9-8825-4b42-937e-a4aa6474e30d.png)
+
+À présent, faites *"CTRL+S"* afin d'aller dans le chemin : **C:\Windows\System32\** <br/> Descendez dans le dossier pour trouver l'invite de commande (cmd), puis ouvrez-le. Il sera ouvert en tant d'administrateur (System32) :
