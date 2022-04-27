@@ -96,6 +96,6 @@ Pour trouver le fichier **root.txt**, écrivez :
 
 `type ..\..\Users\Administrator\Desktop\root.txt`
 
-Bravo à vous, si vous avez réussi à trouver tous les flags ! 
+Bravo à vous, si vous avez réussi à trouver tous les flags ! <br/>
 
 Made with ❤ by *Ferweadi*
