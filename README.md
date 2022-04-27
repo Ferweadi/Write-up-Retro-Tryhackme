@@ -88,4 +88,14 @@ Cliquez sur le lien de *"Issued By:"*, puis choisissez **Internet Explorer** pou
 
 ![1_4aUSEMJtxwZKNlqP4BIffA](https://user-images.githubusercontent.com/67973590/165634728-5fd2aac9-8825-4b42-937e-a4aa6474e30d.png)
 
-À présent, faites *"CTRL+S"* afin d'aller dans le chemin : **C:\Windows\System32\** <br/> Descendez dans le dossier pour trouver l'invite de commande (cmd), puis ouvrez-le. Il sera ouvert en tant d'administrateur (System32) :
+À présent, faites *"CTRL+S"* afin d'aller dans le chemin : **C:\Windows\System32\** <br/> Descendez dans le dossier pour trouver l'invite de commande (cmd), puis ouvrez-le. Il sera ouvert en tant d'administrateur *(System32)* :
+
+![1_ALtZQGVZ52jI1KoFy_hedQ](https://user-images.githubusercontent.com/67973590/165636121-bd2f53c4-aa72-4006-938d-e2f9fd80915c.png)
+
+Pour trouver le fichier **root.txt**, écrivez : 
+
+`type ..\..\Users\Administrator\Desktop\root.txt`
+
+Bravo à vous, si vous avez réussi à trouver tous les flags ! 
+
+Made with ❤ by *Ferweadi*
