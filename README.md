@@ -8,13 +8,15 @@ Le CTF "Retro" est disponible sur la plateforme TryHackMe et a la difficulté "h
 Nous allons devoir trouver les flags sur un serveur web basé sur Windows.
 
 :information_source: MACHINE_IP représente l'IP de la machine "Retro".
+:information_source: le signe "$" représente le début d'une commande sur shell.
 
 ### 1/ Enumeration
 
 Il faut premièrement énumérer les ports ouverts via Nmap
-`$ nmap -Pn -sV MACHINE_IP
 
-PORT     STATE SERVICE       VERSION
-80/tcp   open  http          Microsoft IIS httpd 10.0
-3389/tcp open  ms-wbt-server Microsoft Terminal Services
-Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows`
+`$ nmap -Pn -sV MACHINE_IP`
+
+`PORT     STATE SERVICE       VERSION`
+`80/tcp   open  http          Microsoft IIS httpd 10.0`
+`3389/tcp open  ms-wbt-server Microsoft Terminal Services`
+`Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows`
