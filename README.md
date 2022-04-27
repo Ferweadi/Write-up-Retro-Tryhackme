@@ -23,7 +23,6 @@ PORT     STATE SERVICE       VERSION
 3389/tcp open  ms-wbt-server Microsoft Terminal Services
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
-<br/>
 Deux ports sont ouverts, le port 80 et 3389. Concentrons-nous en premier sur le serveur web (port 80), voici la page principale : <br/>
 
 ![Capturewriteupretro](https://user-images.githubusercontent.com/67973590/165582217-37554dc4-7154-4c61-ac39-b0c48fe8c3c5.PNG)<br/>
@@ -49,7 +48,6 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 2021/04/07 09:03:43 Finished                                                                             
 ===============================================================
 ```
-<br/>
 Nous avons trouvé la page `/retro` après l'énumération. Voici à quoi ressemble la page :<br/>
 
 ![Captureretrowtf](https://user-images.githubusercontent.com/67973590/165585365-c1945d37-e01f-412b-86ca-10eb2e5242eb.PNG)<br/>
