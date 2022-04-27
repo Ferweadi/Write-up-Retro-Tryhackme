@@ -26,3 +26,24 @@ Il faut premièrement énumérer les ports ouverts via Nmap
 Deux ports sont ouverts, le port 80 et 3389. Concentrons-nous en premier sur le serveur web (port 80), voici la page principale : 
 
 ![Capturewriteupretro](https://user-images.githubusercontent.com/67973590/165582217-37554dc4-7154-4c61-ac39-b0c48fe8c3c5.PNG)
+
+Nous allons à présent utiliser Gobuster (Dirsearch et Dirbuster fonctionnent également) afin de trouver les autres pages : 
+
+`$ gobuster dir -u http://MACHINE_IP -w /usr/share/dirb/wordlists/big.txt`<br/>
+`===============================================================`<br/>
+`Gobuster v3.0.1`<br/>
+`by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)`<br/>
+`===============================================================`<br/>
+`[+] Url:            http://10.10.207.134`<br/>
+`[+] Threads:        10`<br/>
+`[+] Wordlist:       /usr/share/dirb/wordlists/big.txt`<br/>
+`[+] Status codes:   200,204,301,302,307,401,403`<br/>
+`[+] User Agent:     gobuster/3.0.1`<br/>
+`[+] Timeout:        10s`<br/>
+`===============================================================`<br/>
+`2021/04/07 09:01:21 Starting gobuster`<br/>
+`===============================================================`<br/>                                                   
+`/retro (Status: 301)`<br/>
+`===============================================================`<br/>
+`2021/04/07 09:03:43 Finished`<br/>                                                                              
+`===============================================================`<br/> 
