@@ -16,7 +16,7 @@ Il faut premièrement énumérer les ports ouverts via Nmap
 
 `$ nmap -Pn -sV MACHINE_IP`
 
-`PORT     STATE SERVICE       VERSION`
-`80/tcp   open  http          Microsoft IIS httpd 10.0`
-`3389/tcp open  ms-wbt-server Microsoft Terminal Services`
-`Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows`
+`PORT     STATE SERVICE       VERSION`<br/>
+`80/tcp   open  http          Microsoft IIS httpd 10.0`<br/>
+`3389/tcp open  ms-wbt-server Microsoft Terminal Services`<br/>
+`Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows`<br/>
