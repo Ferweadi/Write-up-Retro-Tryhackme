@@ -56,3 +56,24 @@ On remarque que les articles du site sont tous écrits par **Wade**, en allant v
 
 
 ![Capturecommentretro](https://user-images.githubusercontent.com/67973590/165585514-92b93c05-8ec9-4d77-869e-9aa111f8fe77.PNG)<br/>
+
+En énumérant la page `/retro`, nous retrouvons une page permettant de se connecter à une page WordPress, vous pouvez continuer via **WordPress** pour la suite, nous ne verrons pas cette partie dans ce write-up. L'énumération est terminée, bravo à vous si vous avez réussi jusqu'ici ! 
+
+**************************************
+
+### 2/ Exploitation
+
+Revenons sur le **port 3389** en utilisant les informations trouvées précédemment.
+Nous savons que **Wade** est le seul utilisateur qui poste sur le site, nous savons qu'il a laissé *"parzival"* de côté pour s'en souvenir, utilisons ces informations afin de nous connecter en RDP à la machine :
+
+`$ xfreerdp /v:MACHINE_IP /u:wade /p:parzival` <br/>
+
+![Capturerdpretro](https://user-images.githubusercontent.com/67973590/165634124-90b6c3a3-3cd1-4c44-8e9f-e11effe245bf.PNG)
+
+Bravo ! Nous avons trouvé le fichier user.txt : fbdc6d430bfb51 (incomplet)
+
+******************************
+
+### 3/ Escalation de privilège
+
+Dans l'historique de Chrome, on s'aperçoit que la page d'une CVE a été ouverte (CVE-2019-1388). Or dans la corbeille, il y a un fichier, que vous devrez restaurer. Une fois cette étape finie, lancez-le, cette page s'affichera : 
