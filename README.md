@@ -48,3 +48,11 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 2021/04/07 09:03:43 Finished                                                                             
 ===============================================================
 ```
+Nous avons trouvé la page `/retro` après l'énumération. Voici à quoi ressemble la page :
+
+![Captureretrowtf](https://user-images.githubusercontent.com/67973590/165585365-c1945d37-e01f-412b-86ca-10eb2e5242eb.PNG)
+
+On remarque que les articles du site sont tous écrits par **Wade**, en allant voir son profil, il est possible de voir ses derniers posts. En allant sur son post *"Ready Player One"* on aperçoit un commentaire écrit par lui-même contenant ce message : 
+
+
+![Capturecommentretro](https://user-images.githubusercontent.com/67973590/165585514-92b93c05-8ec9-4d77-869e-9aa111f8fe77.PNG)
