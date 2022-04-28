@@ -8,7 +8,8 @@ Le CTF "Retro" est disponible sur la plateforme TryHackMe et a la difficulté "h
 Nous allons devoir trouver les flags sur un serveur web basé sur Windows.
 
 :information_source: MACHINE_IP représente l'IP de la machine "Retro".<br/>
-:information_source: le signe "$" représente le début d'une commande sur shell.
+:information_source: Le signe "$" représente le début d'une commande sur shell.
+:information_source: Niveau du CTF : Hard.
 
 *********************
 
